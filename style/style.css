@@ -346,12 +346,16 @@ Navbar Section Style Starts Here
 /* For Responsive */
 @media screen and (max-width:776px) {
     .logo-title{
-        display: none;
+        
     }
     .nav-menu{
-        margin-top: -20px;
+    
     }
-    .navbar , .our-features , .our-experience {
+    .navbar{
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+     .our-features , .our-experience {
         flex-direction: column;
         gap: 25px;
     }
@@ -359,6 +363,9 @@ Navbar Section Style Starts Here
         margin-top: 50px;
         text-align: center;
         padding: 10px 0px;
+    }
+    .brand-details h1{
+        font-size: 40px;
     }
     .banner {
         width: 95%;
